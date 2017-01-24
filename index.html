@@ -11,7 +11,6 @@ Description:
     (we call this a header or prologue)
 -->
     <head>
-
         <title>Artem Alekhin</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +18,7 @@ Description:
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/css/mdb.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="css/bootstrap-social.css">
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/mdb.min.js"></script>
@@ -50,9 +50,9 @@ Description:
         <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
+        <!--<style>
             html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-        </style>
+        </style>-->
         <style>
             body {
                 font: 20px Montserrat, sans-serif;
@@ -73,10 +73,7 @@ Description:
                 background-color: #8f97a6; /* Dark Blue */
                 color: #ffffff;
             }
-            .bg-3 {
-                background-color: #ffffff; /* White */
-                color: #555555;
-            }
+
 
             .container-fluid {
                 padding-top: 70px;
@@ -94,9 +91,7 @@ Description:
             .navbar-nav  li a:hover {
                 color: #1abc9c !important;
             }
-            .grey {
-                color: #2f2f2f;
-            }
+
             .slideanim {visibility:hidden;}
 
             /*.slide {
@@ -129,297 +124,290 @@ Description:
 
         </style>
     </head>
+    <body style="background: url(img/Безымянный-1.svg)">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-default" >
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <br>
-                <a href="https://www.facebook.com/profile.php?id=100001971058754"><i class="fa fa-facebook-official w3-hover-text-indigo w3-large grey"></i></a>
-                <a href="#"><i class="fa fa-linkedin w3-hover-text-indigo w3-large grey"></i></a>
-                <a href="https://plus.google.com/108394633470532193051"><i class="fa fa-google-plus w3-hover-text-indigo w3-large grey"></i></a>
-                <a href="https://github.com/Artem1998"><i class="fa fa-github w3-hover-text-indigo w3-large grey"></i></a>
-                <a href="skype:arty-hero?userinfo"><i class="fa fa-skype w3-hover-text-indigo w3-large grey"></i></a>
-                <a href="https://vk.com/id151584944"><i class="fa fa-vk w3-hover-text-indigo w3-large grey"></i></a>
+                </div>
+                <div class="collapse navbar-collapse" >
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about_me">About me</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <!--<li><a href="#portfolio">Portfolio</a></li>-->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" >
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" role="button">Hire Me</a></li>
-                    <li><a href="doc/1-22-2017.pdf" download role="button"><span class="glyphicon glyphicon-download"></span>Download my resume</a></li>
-                </ul>
+        </nav>
+
+
+        <!-- First Container -->
+        <div class="container-fluid bg-1 text-center" style="background: rgba(21,201,60,0.62) ">
+
+            <img src="img/MyPhoto.jpg" style="display:inline" alt="Me" width="150" class="img-circle">
+
+            <h2>Alekhin Artem</h2>
+            <h3 class="margin" >Computer Programmer and Web Developer</h3>
+
+            <h3>Hello, I'm Artem, specializing in web development and computer programming.</h3>
+            <button type="button" class="btn btn-default" style="background-color: #25c960; color: white"><a href="#" role="button">Hire Me</a></button>
+            <button type="button" class="btn btn-default" style="background-color: #25c960; color: white"><a href="doc/1-22-2017.pdf" download role="button"><span class="glyphicon glyphicon-download"></span>Download my resume</a></button>
+        </div>
+
+        <!-- Second Container -->
+        <div class="container-fluid bg-2 text-center">
+
+                <div class="col-sm-4">
+                    <a href="mailto:arty-hero@yandex.ru?subject=Job"><span class="glyphicon glyphicon-mail"></span>arty-hero@yandex.ru</a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/profile.php?id=100001971058754">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-linkedin" href="#">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-google" href="https://plus.google.com/108394633470532193051">
+                        <span class="fa fa-google"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-github" href="https://github.com/Artem1998">
+                        <span class="fa fa-github"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-twitter" href="skype:arty-hero?userinfo">
+                        <span class="fa fa-skype"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-vk" href="https://vk.com/id151584944">
+                        <span class="fa fa-vk"></span>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="tel:+16476790332"><span class="glyphicon glyphicon-phone"></span>+1(647)679-0332</a>
+                </div>
+        </div>
+
+        <!-- Third Container (Grid) -->
+
+        <div class="container-fluid text-center " style="background: rgba(255,255,255,0.77); color: #2f2f2f">
+
+            <a id="about_me"></a>
+            <h3 class="margin">About Me</h3><br>
+            <div class="row" >
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <p>As an IT co-op student who is passionate about what I do, I know your organization will benefit from my skills, creativity and drive. Adept at coding, testing and debugging in Java, C#, Python and HTML, I thrive on challenge! Also, I am good in web and front-end development. If l don't know the answer to a technical problem, I am able to research and implement an appropriate solution.</p>
+                    <hr>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row" >
+                <div class="col-sm-4">
+                    <p>Mobile Applications</p>
+                    <img src="img/app.svg" height="64px" />
+                </div>
+                <div class="col-sm-4">
+                    <p>Websites</p>
+                    <img src="img/browser.svg" height="64px"/>
+                </div>
+                <div class="col-sm-4">
+                    <p>Databases</p>
+                    <img src="img/database.svg" height="64px"/>
+                </div>
             </div>
         </div>
-    </nav>
 
 
-    <!-- First Container -->
-    <div class="container-fluid bg-1 text-center" style="background: rgba(21,201,60,0.62) ">
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-        <img src="img/MyPhoto.jpg" style="display:inline" alt="Me" width="150" class="img-circle">
+            <!-- The Grid -->
+            <div class="w3-row-padding">
 
-        <h2>Alekhin Artem</h2>
-        <h3 class="margin" >Computer Programmer and Web Developer</h3>
+                <!-- Left Column -->
+                <div class="w3-third">
 
-        <h3>Hello, I'm Artem, specializing in web development and computer programming.</h3>
-    </div>
-
-    <!-- Second Container -->
-    <div class="container-fluid bg-2 text-center">
-
-            <div class="col-sm-4">
-                <a href="mailto:arty-hero@yandex.ru?subject=Job"><span class="glyphicon glyphicon-mail"></span>arty-hero@yandex.ru</a>
-            </div>
-            <div class="col-sm-4">
-                <a href="tel:+16476790332"><span class="glyphicon glyphicon-phone"></span>+1(647)679-0332</a>
-            </div>
-            <div class="col-sm-4">
-                <a href="#"><span class="glyphicon glyphicon-earth"></span>portfolio.com</a>
-            </div>
-
-    </div>
-    <nav class="navbar navbar-default" id="myNavbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="my">
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about_me">About me</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <!--<li><a href="#portfolio">Portfolio</a></li>-->
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-
-
-    <!-- Third Container (Grid) -->
-
-    <div class="container-fluid bg-3 text-center slideanim" style="background: rgba(255,255,255,0.77)">
-        <a id="about_me"><h3 class="margin">About Me</h3><br></a>
-        <div class="row slideanim" >
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                <p>As an IT co-op student who is passionate about what I do, I know your organization will benefit from my skills, creativity and drive. Adept at coding, testing and debugging in Java, C#, Python and HTML, I thrive on challenge! Also, I am good in web and front-end development. If l don't know the answer to a technical problem, I am able to research and implement an appropriate solution.</p>
-                <hr>
-            </div>
-            <div class="col-sm-3"></div>
-        </div>
-        <div class="row slideanim" >
-            <div class="col-sm-4">
-                <p>Mobile Applications</p>
-                <img src="img/app.svg" height="64px" />
-            </div>
-            <div class="col-sm-4">
-                <p>Websites</p>
-                <img src="img/browser.svg" height="64px"/>
-            </div>
-            <div class="col-sm-4">
-                <p>Databases</p>
-                <img src="img/database.svg" height="64px"/>
-            </div>
-        </div>
-    </div>
-    <body class="w3-light-grey" style="background: url(img/Безымянный-1.svg)">
-
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-
-            <!-- Left Column -->
-            <div class="w3-third">
-
-                <div class="w3-white w3-text-grey w3-card-4 slideanim">
-                    <div class="w3-container">
-                        <br>
-                        <a id="contact"></a>
-                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer programmer</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Oakville, Canada</p>
-                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>arty-hero@yandex.ru</p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1(647)679-0332</p>
-                        <hr>
-                        <a id="skills"></a>
-                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></p>
-                        <p>C#</p>
-                        <div class="w3-progress-container w3-round-xlarge w3-small">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
-                                <div class="w3-center w3-text-white">90%</div>
+                    <div class="w3-white w3-text-grey w3-card-4 slideanim">
+                        <div class="w3-container">
+                            <br>
+                            <a id="contact"></a>
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer programmer</p>
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Oakville, Canada</p>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>arty-hero@yandex.ru</p>
+                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1(647)679-0332</p>
+                            <hr>
+                            <a id="skills"></a>
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></p>
+                            <p>C#</p>
+                            <div class="w3-progress-container w3-round-xlarge w3-small">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
+                                    <div class="w3-center w3-text-white">90%</div>
+                                </div>
                             </div>
-                        </div>
-                        <p>Python</p>
-                        <div class="w3-progress-container w3-round-xlarge w3-small">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%">
-                                <div class="w3-center w3-text-white">80%</div>
+                            <p>Python</p>
+                            <div class="w3-progress-container w3-round-xlarge w3-small">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%">
+                                    <div class="w3-center w3-text-white">80%</div>
+                                </div>
                             </div>
-                        </div>
-                        <p>Java</p>
-                        <div class="w3-progress-container w3-round-xlarge w3-small">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:75%">
-                                <div class="w3-center w3-text-white">75%</div>
+                            <p>Java</p>
+                            <div class="w3-progress-container w3-round-xlarge w3-small">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:75%">
+                                    <div class="w3-center w3-text-white">75%</div>
+                                </div>
                             </div>
-                        </div>
-                        <p>HTML5 & CSS3</p>
-                        <div class="w3-progress-container w3-round-xlarge w3-small">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:82%">
-                                <div class="w3-center w3-text-white">82%</div>
+                            <p>HTML5 & CSS3</p>
+                            <div class="w3-progress-container w3-round-xlarge w3-small">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:82%">
+                                    <div class="w3-center w3-text-white">82%</div>
+                                </div>
                             </div>
-                        </div>
-                        <p>SQL</p>
-                        <div class="w3-progress-container w3-round-xlarge w3-small">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:70%">
-                                <div class="w3-center w3-text-white">70%</div>
+                            <p>SQL</p>
+                            <div class="w3-progress-container w3-round-xlarge w3-small">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:70%">
+                                    <div class="w3-center w3-text-white">70%</div>
+                                </div>
                             </div>
-                        </div>
-                        <p>Java Script</p>
-                        <div class="w3-progress-container w3-round-xlarge w3-small">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:70%">
-                                <div class="w3-center w3-text-white">70%</div>
+                            <p>Java Script</p>
+                            <div class="w3-progress-container w3-round-xlarge w3-small">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:70%">
+                                    <div class="w3-center w3-text-white">70%</div>
+                                </div>
                             </div>
-                        </div>
-                        <p>PHP(basic)</p>
-                        <div class="w3-progress-container w3-round-xlarge w3-small">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:60%">
-                                <div class="w3-center w3-text-white">60%</div>
+                            <p>PHP(basic)</p>
+                            <div class="w3-progress-container w3-round-xlarge w3-small">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:60%">
+                                    <div class="w3-center w3-text-white">60%</div>
+                                </div>
                             </div>
-                        </div>
-                        <p>Bootstrap</p>
-                        <div class="w3-progress-container w3-round-xlarge w3-small">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%">
-                                <div class="w3-center w3-text-white">80%</div>
+                            <p>Bootstrap</p>
+                            <div class="w3-progress-container w3-round-xlarge w3-small">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%">
+                                    <div class="w3-center w3-text-white">80%</div>
+                                </div>
                             </div>
-                        </div>
-                        <p>JQuery</p>
-                        <div class="w3-progress-container w3-round-xlarge w3-small">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:70%">
-                                <div class="w3-center w3-text-white">70%</div>
+                            <p>JQuery</p>
+                            <div class="w3-progress-container w3-round-xlarge w3-small">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:70%">
+                                    <div class="w3-center w3-text-white">70%</div>
+                                </div>
                             </div>
+                            <hr>
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                            <p>English</p>
+                            <div class="w3-progress-container w3-round-xlarge">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%"></div>
+                            </div>
+                            <p>Russian</p>
+                            <div class="w3-progress-container w3-round-xlarge">
+                                <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%"></div>
+                            </div>
+                            <br>
+                            <hr>
+                            <p>How to find me?</p>
+                            <figure>
+                                <div id="googleMap" style="height:400px;width:100%;"></div><br>
+                            </figure>
                         </div>
-                        <hr>
-                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-                        <p>English</p>
-                        <div class="w3-progress-container w3-round-xlarge">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%"></div>
-                        </div>
-                        <p>Russian</p>
-                        <div class="w3-progress-container w3-round-xlarge">
-                            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%"></div>
-                        </div>
-                        <br>
-                        <hr>
-                        <p>How to find me?</p>
-                        <figure>
-                            <div id="googleMap" style="height:400px;width:100%;"></div><br>
-                        </figure>
-                    </div>
-                </div><br>
+                    </div><br>
 
-                <!-- End Left Column -->
-            </div>
-
-            <!-- Right Column -->
-            <div class="w3-twothird slideanim">
-
-                <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-                    <a id="experiences"><h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2></a>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Front End Developer / LLC “EMEX” </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2015- January2016</h6>
-
-                        <hr>
-                    </div>
+                    <!-- End Left Column -->
                 </div>
 
-                <div class="w3-container w3-card-2 w3-white slideanim">
-                    <a id="education"><h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2></a>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-                        <p>Web Development! All I need to know in one place</p>
-                        <hr>
+                <!-- Right Column -->
+                <div class="w3-twothird slideanim">
+
+                    <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+                        <a id="experiences"><h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2></a>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Front End Developer / LLC “EMEX” </b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2015- January2016</h6>
+
+                            <hr>
+                        </div>
                     </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Udemy/Java Course</b></h5>
-                        <p>Master Degree</p>
-                        <hr>
+
+                    <div class="w3-container w3-card-2 w3-white slideanim">
+                        <a id="education"><h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2></a>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+                            <p>Web Development! All I need to know in one place</p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Udemy/Java Course</b></h5>
+                            <p>Master Degree</p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>IT School</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012—2016</h6>
+                        </div>
                     </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>IT School</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012—2016</h6>
-                    </div>
+
+                    <!-- End Right Column -->
                 </div>
 
-                <!-- End Right Column -->
+                <!-- End Grid -->
             </div>
 
-            <!-- End Grid -->
+            <!-- End Page Container -->
         </div>
+        <!-- Footer -->
+        <footer class="w3-container w3-teal w3-center w3-margin-top">
+            <p>Find me on social media.</p>
+            <a href="https://www.facebook.com/profile.php?id=100001971058754"><i class="fa fa-facebook-official w3-hover-text-indigo w3-large "></i></a>
+            <a href="#"><i class="fa fa-linkedin w3-hover-text-indigo w3-large "></i></a>
+            <a href="https://plus.google.com/108394633470532193051"><i class="fa fa-google-plus w3-hover-text-indigo w3-large "></i></a>
+            <a href="https://github.com/Artem1998"><i class="fa fa-github w3-hover-text-indigo w3-large "></i></a>
+            <a href="skype:arty-hero?userinfo"><i class="fa fa-skype w3-hover-text-indigo w3-large "></i></a>
+            <a href="https://vk.com/id151584944"><i class="fa fa-vk w3-hover-text-indigo w3-large "></i></a>
 
-        <!-- End Page Container -->
-    </div>
-    <!-- Footer -->
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <p>Find me on social media.</p>
-        <a href="https://www.facebook.com/profile.php?id=100001971058754"><i class="fa fa-facebook-official w3-hover-text-indigo w3-large "></i></a>
-        <a href="#"><i class="fa fa-linkedin w3-hover-text-indigo w3-large "></i></a>
-        <a href="https://plus.google.com/108394633470532193051"><i class="fa fa-google-plus w3-hover-text-indigo w3-large "></i></a>
-        <a href="https://github.com/Artem1998"><i class="fa fa-github w3-hover-text-indigo w3-large "></i></a>
-        <a href="skype:arty-hero?userinfo"><i class="fa fa-skype w3-hover-text-indigo w3-large "></i></a>
-        <a href="https://vk.com/id151584944"><i class="fa fa-vk w3-hover-text-indigo w3-large "></i></a>
+        </footer>
 
-    </footer>
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
 
-    <script>
-        $(document).ready(function(){
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
 
-                    // Store hash
-                    var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function(){
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function(){
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-
-            $(window).scroll(function() {
-                $(".slideanim").each(function(){
-                    var pos = $(this).offset().top;
-
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slide");
-                    }
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
                 });
-            });
-        })
-    </script>
+
+                $(window).scroll(function() {
+                    $(".slideanim").each(function(){
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            })
+        </script>
     </body>
 </html>
