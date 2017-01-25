@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f6f8649-cc86-4dd8-b844-38f6e3fc287f" name="Default" comment="Here is update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyPersonalWebsite/css/bootstrap.min.css" />
+    <list default="true" id="1f6f8649-cc86-4dd8-b844-38f6e3fc287f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyPersonalWebsite/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../MyPersonalWebsite/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyPersonalWebsite/index.html" afterPath="$PROJECT_DIR$/../MyPersonalWebsite/index.html" />
     </list>
@@ -48,8 +47,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../MyPersonalWebsite/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="329" column="20" lean-forward="false" selection-start-line="329" selection-start-column="20" selection-end-line="329" selection-end-column="20" />
+            <state relative-caret-position="279">
+              <caret line="286" column="37" lean-forward="false" selection-start-line="286" selection-start-column="37" selection-end-line="286" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -308,7 +307,7 @@
       <option name="presentableId" value="Default" />
       <updated>1484888866313</updated>
       <workItem from="1484888870788" duration="13113000" />
-      <workItem from="1484978176839" duration="59279000" />
+      <workItem from="1484978176839" duration="61857000" />
     </task>
     <task id="LOCAL-00001" summary="Here is update">
       <created>1485273102895</created>
@@ -324,11 +323,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485288876863</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Here is update">
+      <created>1485319121313</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1485319121313</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72392000" />
+    <option name="totallyTimeSpent" value="74970000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../MyPersonalWebsite/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="329" column="20" lean-forward="false" selection-start-line="329" selection-start-column="20" selection-end-line="329" selection-end-column="20" />
+        <state relative-caret-position="279">
+          <caret line="286" column="37" lean-forward="false" selection-start-line="286" selection-start-column="37" selection-end-line="286" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
