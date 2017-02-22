@@ -13,6 +13,8 @@ Description:
     <head>
         <title>Artem Alekhin</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale = 1.0;
+maximum-scale=1.0; user-scalable=no" />
         <meta name="HandheldFriendly" content="true" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -43,7 +45,7 @@ Description:
                 });
 
                 marker.setMap(map);
-213            }
+213           }
 
             google.maps.event.addDomListener(window, 'load', initialize);
         </script>
@@ -58,6 +60,7 @@ Description:
                 font: 20px Montserrat, sans-serif;
                 line-height: 1.8;
                 color: #f5f6f7;
+                overflow-x:hidden;
             }
             p {font-size: 16px;}
             .margin {
@@ -76,8 +79,8 @@ Description:
 
 
             .container-fluid {
-                padding-top: 70px;
-                padding-bottom: 70px;
+                padding-top: 35px;
+                padding-bottom: 35px;
             }
             .navbar {
                 /*padding-top: 0px;
@@ -136,7 +139,7 @@ Description:
                     </button>
 
                 </div>
-                <div class="collapse navbar-collapse" >
+                <div class="collapse navbar-collapse" id="myNavbar" >
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#about_me">About me</a></li>
                         <li><a href="#experiences">Experiences</a></li>
@@ -149,221 +152,222 @@ Description:
             </div>
         </nav>
 
-
+        <main>
         <!-- First Container -->
-        <div class="container-fluid bg-1 text-center" style="background: rgba(21,201,60,0.62) ">
-            <br>
-            <img src="img/MyPhoto.jpg" style="display:inline" alt="Me" width="150" class="img-circle">
-            <h2>Alekhin Artem</h2>
-            <h3 class="margin" >Full stack developer</h3>
-            <h3>Hello, I'm Artem, specializing in web development and computer programming.</h3>
-            <button type="button" class="btn btn-default" style="background-color: #25c960; color: white" href="#">Hire Me</button>
-            <button type="button" class="btn btn-default" style="background-color: #25c960; color: white"><a href="doc/1-22-2017.pdf" download role="button"><span class="glyphicon glyphicon-download"></span>Download my resume</a></button>
-        </div>
-
-        <!-- Second Container -->
-        <div class="container-fluid bg-2 text-center">
-
-            <div class="col-sm-4">
-                <a href="mailto:arty-hero@yandex.ru?subject=Job"><span class="glyphicon glyphicon-mail"></span>arty-hero@yandex.ru</a>
-            </div>
-            <div class="col-sm-4">
-                <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/profile.php?id=100001971058754">
-                    <span class="fa fa-facebook"></span>
-                </a>
-                <a class="btn btn-social-icon btn-linkedin" href="#">
-                    <span class="fa fa-linkedin"></span>
-                </a>
-                <a class="btn btn-social-icon btn-google" href="https://plus.google.com/108394633470532193051">
-                    <span class="fa fa-google"></span>
-                </a>
-                <a class="btn btn-social-icon btn-github" href="https://github.com/Artem1998">
-                    <span class="fa fa-github"></span>
-                </a>
-                <a class="btn btn-social-icon btn-twitter" href="skype:arty-hero?userinfo">
-                    <span class="fa fa-skype"></span>
-                </a>
-                <a class="btn btn-social-icon btn-vk" href="https://vk.com/id151584944">
-                    <span class="fa fa-vk"></span>
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <a href="tel:+16476790332"><span class="glyphicon glyphicon-phone"></span>+1(647)679-0332</a>
-            </div>
-        </div>
-
-        <!-- Third Container (Grid) -->
-
-        <div class="container-fluid text-center " style="background: rgba(255,255,255,0.77); color: #2f2f2f">
-
-            <h3 id="about_me" class="margin">About Me</h3><br>
-            <div class="row" >
-                <div class="col-sm-3"></div>
-                <div class="col-sm-6">
-                    <p>As an IT co-op student who is passionate about what I do, I know your organization will benefit from my skills, creativity and drive. Adept at coding, testing and debugging in Java, C#, Python and HTML, I thrive on challenge! Also, I am good in web and front-end development. If l don't know the answer to a technical problem, I am able to research and implement an appropriate solution.</p>
-                    <hr>
-                </div>
-                <div class="col-sm-3"></div>
-            </div>
-            <div class="row" >
-                <div class="col-sm-4">
-                    <p>Mobile Applications</p>
-                    <img src="img/app.svg" height="64" alt="App"/>
-                </div>
-                <div class="col-sm-4">
-                    <p>Websites</p>
-                    <img src="img/browser.svg" height="64" alt="Browser"/>
-                </div>
-                <div class="col-sm-4">
-                    <p>Databases</p>
-                    <img src="img/database.svg" height="64" alt="Database"/>
-                </div>
-            </div>
-        </div>
-
-        <br>
-        <!-- Page Container -->
-        <div class="row" style="max-width:1400px;">
-            <div class="col-sm-1"></div>
-            <!-- The Grid -->
-            <!--<div class="w3-row-padding">-->
-            <div class="col-sm-4">
-                <!-- Left Column -->
-                  <div class="container-fluid" style="background-color: white; color: #2f2f2f">
-
-                    <br>
-                    <p><i id="contact" class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer programmer</p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Oakville, Canada</p>
-                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>arty-hero@yandex.ru</p>
-                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1(647)679-0332</p>
-                    <hr>
-                    <p class="w3-large" id="skills"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></p>
-                    <p>C#</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                              <span class="sr-only">90% Complete (success)</span>
-                              <div class="w3-center w3-text-white">90%</div>
-                          </div>
-                      </div>
-                    <p>Python/Django</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                              <span class="sr-only">80% Complete (success)</span>
-                              <div class="w3-center w3-text-white">80%</div>
-                          </div>
-                      </div>
-                    <p>Java</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                              <span class="sr-only">75% Complete (success)</span>
-                              <div class="w3-center w3-text-white">75%</div>
-                          </div>
-                      </div>
-                    <p>HTML5 & CSS3</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
-                              <span class="sr-only">82% Complete (success)</span>
-                              <div class="w3-center w3-text-white">82%</div>
-                          </div>
-                      </div>
-                    <p>SQL</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                              <span class="sr-only">70% Complete (success)</span>
-                              <div class="w3-center w3-text-white">70%</div>
-                          </div>
-                      </div>
-
-                    <p>Java Script</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                              <span class="sr-only">70% Complete (success)</span>
-                              <div class="w3-center w3-text-white">70%</div>
-                          </div>
-                      </div>
-                    <p>PHP(basic)</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                              <span class="sr-only">60% Complete (success)</span>
-                              <div class="w3-center w3-text-white">60%</div>
-                          </div>
-                      </div>
-                    <p>Bootstrap</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                              <span class="sr-only">80% Complete (success)</span>
-                              <div class="w3-center w3-text-white">80%</div>
-                          </div>
-                      </div>
-                    <p>JQuery</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                              <span class="sr-only">70% Complete (success)</span>
-                              <div class="w3-center w3-text-white">70%</div>
-                          </div>
-                      </div>
-                    <hr>
-                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-                    <p>English</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%; " >
-                              <span class="sr-only">70% Complete (success)</span>
-                          </div>
-                      </div>
-                    <p>Russian</p>
-                      <div class="progress">
-                          <div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%; " >
-                              <span class="sr-only">70% Complete (success)</span>
-                          </div>
-                      </div>
-                    <br>
-                    <hr>
-                    <p>How to find me?</p>
-                    <figure>
-                        <div id="googleMap" style="height:400px;width:100%;"></div><br>
-                    </figure>
-
-                  </div><br>
-            </div>
-                    <!-- End Left Column -->
-                <!--</div>-->
-            <div class="col-sm-1"></div>
-                <!-- Right Column -->
-            <div class="col-sm-6">
-                <div class="container-fluid" style="background-color: white; color: #2f2f2f">
-                    <h2 id="experiences" class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Front End Developer / LLC “EMEX” </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2015- January2016</h6>
-                        <hr>
-                    </div>
-                </div>
+            <div class="container-fluid bg-1 text-center" style="background: rgba(21,201,60,0.62) ">
                 <br>
-                <div class="container-fluid" style="background-color: white; color: #2f2f2f">
+                <img src="img/MyPhoto.jpg" style="display:inline" alt="Me" width="150" class="img-circle">
+                <h2>Alekhin Artem</h2>
+                <h3 class="margin" >Full stack developer</h3>
+                <h3>Hello, I'm Artem, specializing in web development and computer programming.</h3>
+                <button type="button" class="btn btn-default" style="background-color: #25c960; color: white" href="#">Hire Me</button>
+                <button type="button" class="btn btn-default" style="background-color: #25c960; color: white"><a style="text-decoration: none; color: white;" href="doc/1-22-2017.pdf" download role="button"><span class="glyphicon glyphicon-download"></span>Download my resume</a></button>
+            </div>
 
-                    <h2 id="education" class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-                        <p>Web Development! All I need to know in one place</p>
+            <!-- Second Container -->
+            <div class="container-fluid bg-2 text-center">
+
+                <div class="col-sm-4">
+                    <a href="mailto:arty-hero@yandex.ru?subject=Job"><span class="glyphicon glyphicon-mail"></span>arty-hero@yandex.ru</a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/profile.php?id=100001971058754">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-linkedin" href="#">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-google" href="https://plus.google.com/108394633470532193051">
+                        <span class="fa fa-google"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-github" href="https://github.com/Artem1998">
+                        <span class="fa fa-github"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-twitter" href="skype:arty-hero?userinfo">
+                        <span class="fa fa-skype"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-vk" href="https://vk.com/id151584944">
+                        <span class="fa fa-vk"></span>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="tel:+16476790332"><span class="glyphicon glyphicon-phone"></span>+1(647)679-0332</a>
+                </div>
+            </div>
+
+            <!-- Third Container (Grid) -->
+
+            <div class="container-fluid text-center " style="background: rgba(255,255,255,0.77); color: #2f2f2f">
+
+                <h3 id="about_me" class="margin">About Me</h3><br>
+                <div class="row" >
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <p>As an IT co-op student who is passionate about what I do, I know your organization will benefit from my skills, creativity and drive. Adept at coding, testing and debugging in Java, C#, Python and HTML, I thrive on challenge! Also, I am good in web and front-end development. If l don't know the answer to a technical problem, I am able to research and implement an appropriate solution.</p>
                         <hr>
                     </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Udemy/Java Course</b></h5>
-                        <p>Master Degree</p>
-                        <hr>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row" >
+                    <div class="col-sm-4">
+                        <p>Mobile Applications</p>
+                        <img src="img/app.svg" height="64" alt="App"/>
                     </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>IT School</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012—2016</h6>
+                    <div class="col-sm-4">
+                        <p>Websites</p>
+                        <img src="img/browser.svg" height="64" alt="Browser"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Databases</p>
+                        <img src="img/database.svg" height="64" alt="Database"/>
                     </div>
                 </div>
-                <!-- End Right Column -->
             </div>
-            <!--<div class="col-sm-1"></div>-->
-                <!-- End Grid -->
-            <!-- End Page Container -->
-        </div>
+
+            <br>
+            <!-- Page Container -->
+            <div class="row" style="max-width:1400px;">
+                <div class="col-sm-1"></div>
+                <!-- The Grid -->
+                <!--<div class="w3-row-padding">-->
+                <div class="col-sm-4">
+                    <!-- Left Column -->
+                      <div class="container-fluid" style="background-color: white; color: #2f2f2f">
+
+                        <br>
+                        <p><i id="contact" class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer programmer</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Oakville, Canada</p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>arty-hero@yandex.ru</p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1(647)679-0332</p>
+                        <hr>
+                        <p class="w3-large" id="skills"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></p>
+                        <p>C#</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                  <span class="sr-only">90% Complete (success)</span>
+                                  <div class="w3-center w3-text-white">90%</div>
+                              </div>
+                          </div>
+                        <p>Python/Django</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                  <span class="sr-only">80% Complete (success)</span>
+                                  <div class="w3-center w3-text-white">80%</div>
+                              </div>
+                          </div>
+                        <p>Java</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                                  <span class="sr-only">75% Complete (success)</span>
+                                  <div class="w3-center w3-text-white">75%</div>
+                              </div>
+                          </div>
+                        <p>HTML5 & CSS3</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+                                  <span class="sr-only">82% Complete (success)</span>
+                                  <div class="w3-center w3-text-white">82%</div>
+                              </div>
+                          </div>
+                        <p>SQL</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                  <span class="sr-only">70% Complete (success)</span>
+                                  <div class="w3-center w3-text-white">70%</div>
+                              </div>
+                          </div>
+
+                        <p>Java Script</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                  <span class="sr-only">70% Complete (success)</span>
+                                  <div class="w3-center w3-text-white">70%</div>
+                              </div>
+                          </div>
+                        <p>PHP(basic)</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                  <span class="sr-only">60% Complete (success)</span>
+                                  <div class="w3-center w3-text-white">60%</div>
+                              </div>
+                          </div>
+                        <p>Bootstrap</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                  <span class="sr-only">80% Complete (success)</span>
+                                  <div class="w3-center w3-text-white">80%</div>
+                              </div>
+                          </div>
+                        <p>JQuery</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                  <span class="sr-only">70% Complete (success)</span>
+                                  <div class="w3-center w3-text-white">70%</div>
+                              </div>
+                          </div>
+                        <hr>
+                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                        <p>English</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%; " >
+                                  <span class="sr-only">70% Complete (success)</span>
+                              </div>
+                          </div>
+                        <p>Russian</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%; " >
+                                  <span class="sr-only">70% Complete (success)</span>
+                              </div>
+                          </div>
+                        <br>
+                        <hr>
+                        <p>How to find me?</p>
+                        <figure>
+                            <div id="googleMap" style="height:400px;width:100%;"></div><br>
+                        </figure>
+
+                      </div><br>
+                </div>
+                        <!-- End Left Column -->
+                    <!--</div>-->
+                <div class="col-sm-1"></div>
+                    <!-- Right Column -->
+                <div class="col-sm-6">
+                    <div class="container-fluid" style="background-color: white; color: #2f2f2f">
+                        <h2 id="experiences" class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Front End Developer / LLC “EMEX” </b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2015- January2016</h6>
+                            <hr>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container-fluid" style="background-color: white; color: #2f2f2f">
+
+                        <h2 id="education" class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+                            <p>Web Development! All I need to know in one place</p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Udemy/Java Course</b></h5>
+                            <p>Master Degree</p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>IT School</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012—2016</h6>
+                        </div>
+                    </div>
+                    <!-- End Right Column -->
+                </div>
+                <!--<div class="col-sm-1"></div>-->
+                    <!-- End Grid -->
+                <!-- End Page Container -->
+            </div>
+        </main>
         <!-- Footer -->
         <footer class=" text-center " style="background-color: #30c966">
             <p>Find me on social media.</p>
