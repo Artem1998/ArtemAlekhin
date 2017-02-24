@@ -87,13 +87,13 @@ maximum-scale=1.0; user-scalable=no" />
                             <h2>Send e-mail to me:</h2>
                             <div class="col-sm-4"></div>
                             <div class="col-sm-4">
-                                <form method="post" enctype="text/plain" name="myemailform" action="js/form_to_email.js">
+                                <form method="post" enctype="text/plain" name="myemailform" action="js/form_to_email.php">
                                     Name:<br>
-                                    <input type="text" name="name"><br>
+                                    <input title="name" type="text" name="name"><br>
                                     E-mail:<br>
-                                    <input type="text" name="email"><br>
-                                    Comment:<br>
-                                    <input type="text" name="message" size="50"><br><br>
+                                    <input title="email" type="text" name="email"><br>
+                                    Message:<br>
+                                    <input title="message" type="text" name="message" size="50"><br><br>
                                     <input type="submit" class="btn btn-default" value="Send">
                                     <input type="reset" class="btn btn-default" value="Reset">
                                 </form>
