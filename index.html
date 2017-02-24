@@ -15,123 +15,27 @@ Description:
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width; initial-scale = 1.0;
 maximum-scale=1.0; user-scalable=no" />
+        <link rel="shortcut icon" type="image/ico" href="img/browser_icon.ico"/>
         <meta name="HandheldFriendly" content="true" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="css/mdb.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="css/bootstrap-social.css">
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/mdb.min.js"></script>
-        <!-- Add Google Maps -->
-        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDTj9V4BMvSWksKjov1dwBEk7cfQuNihHM"></script>
-        <script>
-            var myCenter = new google.maps.LatLng(43.4476481,-79.6863191,18.56);
-
-            function initialize() {
-                var mapProp = {
-                    center:myCenter,
-                    zoom:14,
-                    scrollwheel:false,
-                    draggable:false,
-                    mapTypeId:google.maps.MapTypeId.ROADMAP
-                };
-
-                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-                var marker = new google.maps.Marker({
-                    position: myCenter
-                });
-
-                marker.setMap(map);
-213           }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
         <link rel="stylesheet" href="css/w3.css">
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--<style>
-            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-        </style>-->
-        <style>
-            body {
-                font: 20px Montserrat, sans-serif;
-                line-height: 1.8;
-                color: #f5f6f7;
-                overflow-x:hidden;
-                background: url(img/Безымянный-1.svg);
-                width: 100%;
-            }
-            main{
-                overflow-x: hidden;
-                width: 100%;
-            }
-            p {font-size: 16px;}
-            .margin {
-                font: 20px Raleway, sans-serif;
-                margin-bottom: 45px;
-            }
+        <link rel="stylesheet" href="css/addition.css">
 
-            .bg-1 {
-                background-color: #1abc9c; /* Green */
-                color: #ffffff;
-            }
-            .bg-2 {
-                background-color: #8f97a6; /* Dark Blue */
-                color: #ffffff;
-            }
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mdb.min.js"></script>
 
+        <!-- Add Google Maps -->
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDTj9V4BMvSWksKjov1dwBEk7cfQuNihHM"></script>
+        <script src="js/maps.js"></script>
+        <script src="js/scroll.js"></script>
 
-            .container-fluid {
-                padding-top: 35px;
-                padding-bottom: 35px;
-            }
-            .navbar {
-                /*padding-top: 0px;
-                padding-bottom: 3px;*/
-                border: 0;
-                border-radius: 0;
-                margin-bottom: 0;
-                font-size: 12px;
-                letter-spacing: 5px;
-            }
-            .navbar-nav  li a:hover {
-                color: #1abc9c !important;
-            }
-
-            /*.slideanim {visibility:hidden;}*/
-
-            /*.slide {
-                animation-name: slide;
-                -webkit-animation-name: slide;
-                animation-duration: 1s;
-                -webkit-animation-duration: 1s;
-                visibility: visible;
-            }*/
-            @keyframes slide {
-                0% {
-                    opacity: 0;
-                    transform: translateY(70%);
-                }
-                100% {
-                    opacity: 1;
-                    transform: translateY(0%);
-                }
-            }
-            @-webkit-keyframes slide {
-                0% {
-                    opacity: 0;
-                    -webkit-transform: translateY(70%);
-                }
-                100% {
-                    opacity: 1;
-                    -webkit-transform: translateY(0%);
-                }
-            }
-
-        </style>
     </head>
     <body>
         <!-- Navbar -->
@@ -160,13 +64,55 @@ maximum-scale=1.0; user-scalable=no" />
 
         <main>
         <!-- First Container -->
-            <div class="container-fluid bg-1 text-center" style="background: rgba(21,201,60,0.62) ">
+            <div id="Upper" class="container-fluid bg-1 text-center" style="background: rgba(21,201,60,0.62) ">
                 <br>
-                <img src="img/MyPhoto.jpg" style="display:inline" alt="Me" width="150" class="img-circle">
-                <h2>Alekhin Artem</h2>
-                <h3 class="margin" >Full stack developer</h3>
-                <h3>Hello, I'm Artem, specializing in web development and computer programming.</h3>
-                <button type="button" class="btn btn-default" style="background-color: #25c960; color: white" href="#">Hire Me</button>
+                <div id="myCarousel" class="carousel slide" data-interval="false" >
+                    <!-- Indicators -->
+                    <!--<ol class="carousel-indicators">
+                        <li class="item1 active"></li>
+                        <li class="item2"></li>
+                    </ol>-->
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                        <div class="item active">
+                            <img src="img/MyPhoto.jpg" style="display:inline" alt="Me" width="150" class="img-circle">
+                            <h2>Alekhin Artem</h2>
+                            <h3 class="margin" >Full stack developer</h3>
+                            <h3>Hello, I'm Artem, specializing in web development and computer programming.</h3>
+                        </div>
+
+                        <div class="item">
+                            <h2>Send e-mail to me:</h2>
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-4">
+                                <form method="post" enctype="text/plain" name="myemailform" action="js/form_to_email.js">
+                                    Name:<br>
+                                    <input type="text" name="name"><br>
+                                    E-mail:<br>
+                                    <input type="text" name="email"><br>
+                                    Comment:<br>
+                                    <input type="text" name="message" size="50"><br><br>
+                                    <input type="submit" class="btn btn-default" value="Send">
+                                    <input type="reset" class="btn btn-default" value="Reset">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <!--<a class="left carousel-control" href="#myCarousel" role="button">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>-->
+                </div>
+                <button type="button" class="btn btn-default right" style="background-color: #25c960; color: white" href="#Upper">Hire Me</button>
                 <button type="button" class="btn btn-default" style="background-color: #25c960; color: white"><a style="text-decoration: none; color: white;" href="doc/1-22-2017.pdf" download role="button"><span class="glyphicon glyphicon-download"></span>Download my resume</a></button>
             </div>
 
@@ -174,26 +120,17 @@ maximum-scale=1.0; user-scalable=no" />
             <div class="container-fluid bg-2 text-center">
 
                 <div class="col-sm-4">
-                    <a href="mailto:arty-hero@yandex.ru?subject=Job"><span class="glyphicon glyphicon-mail"></span>arty-hero@yandex.ru</a>
+                    <a href="mailto:arty-hero@yandex.ru?subject=Job"><span class="glyphicon glyphicon-mail"></span>alekhinartem874@gmail.com</a>
                 </div>
                 <div class="col-sm-4">
-                    <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/profile.php?id=100001971058754">
-                        <span class="fa fa-facebook"></span>
-                    </a>
                     <a class="btn btn-social-icon btn-linkedin" href="#">
                         <span class="fa fa-linkedin"></span>
-                    </a>
-                    <a class="btn btn-social-icon btn-google" href="https://plus.google.com/108394633470532193051">
-                        <span class="fa fa-google"></span>
                     </a>
                     <a class="btn btn-social-icon btn-github" href="https://github.com/Artem1998">
                         <span class="fa fa-github"></span>
                     </a>
                     <a class="btn btn-social-icon btn-twitter" href="skype:arty-hero?userinfo">
                         <span class="fa fa-skype"></span>
-                    </a>
-                    <a class="btn btn-social-icon btn-vk" href="https://vk.com/id151584944">
-                        <span class="fa fa-vk"></span>
                     </a>
                 </div>
                 <div class="col-sm-4">
@@ -203,9 +140,9 @@ maximum-scale=1.0; user-scalable=no" />
 
             <!-- Third Container (Grid) -->
 
-            <div class="container-fluid text-center " style="background: rgba(255,255,255,0.77); color: #2f2f2f">
+            <div id="about_me" class="container-fluid text-center " style="background: rgba(255,255,255,0.77); color: #2f2f2f">
 
-                <h3 id="about_me" class="margin">About Me</h3><br>
+                <h3 class="margin">About Me</h3><br>
                 <div class="row" >
                     <div class="col-sm-3"></div>
                     <div class="col-sm-6">
@@ -232,16 +169,16 @@ maximum-scale=1.0; user-scalable=no" />
 
             <br>
             <!-- Page Container -->
-            <div class="row" style="max-width:1400px;">
+            <div class="row" >
                 <div class="col-sm-1"></div>
                 <!-- The Grid -->
                 <!--<div class="w3-row-padding">-->
                 <div class="col-sm-4">
                     <!-- Left Column -->
-                      <div class="container-fluid" style="background-color: white; color: #2f2f2f">
+                      <div id="contact" class="container-fluid" style="background-color: white; color: #2f2f2f">
 
                         <br>
-                        <p><i id="contact" class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer programmer</p>
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer programmer</p>
                         <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Oakville, Canada</p>
                         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>arty-hero@yandex.ru</p>
                         <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1(647)679-0332</p>
@@ -338,9 +275,9 @@ maximum-scale=1.0; user-scalable=no" />
                     <!--</div>-->
                 <div class="col-sm-1"></div>
                     <!-- Right Column -->
-                <div class="col-sm-6">
+                <div id="experiences" class="col-sm-6">
                     <div class="container-fluid" style="background-color: white; color: #2f2f2f">
-                        <h2 id="experiences" class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
                         <div class="w3-container">
                             <h5 class="w3-opacity"><b>Front End Developer / LLC “EMEX” </b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2015- January2016</h6>
@@ -348,9 +285,9 @@ maximum-scale=1.0; user-scalable=no" />
                         </div>
                     </div>
                     <br>
-                    <div class="container-fluid" style="background-color: white; color: #2f2f2f">
+                    <div id="education" class="container-fluid" style="background-color: white; color: #2f2f2f">
 
-                        <h2 id="education" class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
                         <div class="w3-container">
                             <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
@@ -374,23 +311,12 @@ maximum-scale=1.0; user-scalable=no" />
                 <!-- End Page Container -->
             </div>
         </main>
+
         <!-- Footer -->
         <footer class=" text-center " style="background-color: #30c966">
             <p>Find me on social media.</p>
             <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/profile.php?id=100001971058754">
                 <span class="fa fa-facebook"></span>
-            </a>
-            <a class="btn btn-social-icon btn-linkedin" href="#">
-                <span class="fa fa-linkedin"></span>
-            </a>
-            <a class="btn btn-social-icon btn-google" href="https://plus.google.com/108394633470532193051">
-                <span class="fa fa-google"></span>
-            </a>
-            <a class="btn btn-social-icon btn-github" href="https://github.com/Artem1998">
-                <span class="fa fa-github"></span>
-            </a>
-            <a class="btn btn-social-icon btn-twitter" href="skype:arty-hero?userinfo">
-                <span class="fa fa-skype"></span>
             </a>
             <a class="btn btn-social-icon btn-vk" href="https://vk.com/id151584944">
                 <span class="fa fa-vk"></span>
@@ -398,41 +324,6 @@ maximum-scale=1.0; user-scalable=no" />
             <br>
         </footer>
 
-        <script>
-            $(document).ready(function(){
-                // Add smooth scrolling to all links in navbar + footer link
-                $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-
-                        // Store hash
-                        var hash = this.hash;
-
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 900, function(){
-
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
-
-                $(window).scroll(function() {
-                    $(".slideanim").each(function(){
-                        var pos = $(this).offset().top;
-
-                        var winTop = $(window).scrollTop();
-                        if (pos < winTop + 600) {
-                            $(this).addClass("slide");
-                        }
-                    });
-                });
-            })
-        </script>
+        <script src="js/carousel.js"></script>
     </body>
 </html>
