@@ -3,7 +3,7 @@ body {
     line-height: 1.8;
     color: #f5f6f7;
     overflow-x:hidden;
-    background: url(img/Безымянный-1.svg);
+    background: url(../img/Безымянный-1.svg);
     width: 100%;
 }
 main{
